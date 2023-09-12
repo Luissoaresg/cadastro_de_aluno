@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Alunos Web</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <!-- Css e JavaScript -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/variaveis.js" defer></script>
+    <script src="js/select.js" defer></script>
+    <script src="js/preenchertabela.js" defer></script>
+    <script src="js/clear.js" defer></script>
+    <script src="js/cadastrar.js" defer></script>
+    <script src="js/editar.js" defer></script>
+    <script src="js/deletar.js" defer></script>
+</head>
+
+<body>
+    <form>
+        <input type="text" id="id" class="visually-hidden">
+        <input type="text" id="nome" class="form-control" placeholder="Informe o nome do aluno...">
+        <input type="text" id="nota1" class="form-control" placeholder="1° Nota">
+        <input type="text" id="nota2" class="form-control" placeholder="2° Nota">
+        <input type="text" id="nota3" class="form-control" placeholder="3° Nota">
+
+        <input type="button" id="cadastrar" value="Cadastrar" class="btn btn-primary">
+        <input type="button" id="editar" value="Editar" class="btn btn-warning visually-hidden">
+        <input type="button" id="deletar" value="Deletar" class="btn btn-danger visually-hidden">
+        <input type="button" id="cancelar" value="Cancelar" class="btn btn-secondary visually-hidden">
+    </form>
+    <table class="table">
+        <thead>
+            <tr>
+
+                <th>#</th>
+                <th>Nome</th>
+                <th>1° Nota</th>
+                <th>2° Nota</th>
+                <th>3° Nota</th>
+                <th>Media</th>
+                <th>Status</th>
+                <th>Selecionar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Adicionando via JavaScript -->
+        </tbody>
+    </table>
+</body>
+
+</html>
